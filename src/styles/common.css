@@ -1,0 +1,47 @@
+/* Common Components Styles */
+
+/* Back Button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #455a64;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.back-button:hover {
+  color: #1e3c72;
+  background-color: rgba(30, 60, 114, 0.05);
+}
+
+.back-button:active {
+  transform: translateY(1px);
+}
+
+/* Auth pages specific back button */
+.auth-back-button {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+}
+
+/* Marketing pages back button */
+.marketing-back-button {
+  margin: 1rem 0;
+}
+
+/* Special styling for mobile */
+@media (max-width: 768px) {
+  .auth-back-button {
+    top: 1rem;
+    left: 1rem;
+  }
+}

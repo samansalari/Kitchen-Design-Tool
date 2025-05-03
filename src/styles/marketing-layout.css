@@ -1,0 +1,285 @@
+/* Marketing Components Layout Styles */
+
+/* Shared Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+/* Marketing Header Styles */
+.marketing-header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marketing-header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1e3c72;
+  gap: 0.5rem;
+}
+
+.marketing-header .logo svg {
+  color: #1e3c72;
+}
+
+.marketing-header .main-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.marketing-header .main-nav a {
+  color: #4a5568;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.marketing-header .main-nav a:hover {
+  color: #1e3c72;
+}
+
+.marketing-header .main-nav a.active {
+  color: #1e3c72;
+}
+
+.marketing-header .main-nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1e3c72;
+  border-radius: 1px;
+}
+
+.marketing-header .auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.marketing-header .login-button {
+  color: #1e3c72;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.marketing-header .login-button:hover {
+  background-color: rgba(30, 60, 114, 0.05);
+}
+
+.marketing-header .register-button,
+.marketing-header .dashboard-button {
+  background-color: #1e3c72;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.marketing-header .register-button:hover,
+.marketing-header .dashboard-button:hover {
+  background-color: #2a5298;
+  transform: translateY(-1px);
+}
+
+/* Marketing Footer Styles */
+.marketing-footer {
+  background-color: #f8fafc;
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-brand .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1e3c72;
+  gap: 0.5rem;
+}
+
+.footer-brand .brand-desc {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.footer-brand .social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer-brand .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  color: #1e3c72;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-brand .social-links a:hover {
+  background-color: #1e3c72;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footer-links-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #1e3c72;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-bottom .copyright {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.footer-bottom .legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-bottom .legal-links a {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom .legal-links a:hover {
+  color: #1e3c72;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer-brand {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .marketing-header .main-nav {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+  }
+
+  .marketing-header .auth-buttons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-links-group {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .marketing-header .main-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links-group {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
