@@ -314,4 +314,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Developed with ❤️ by Saman [samansalari.com]
+Developed with ❤️ by Saman [https://samansalari.com]
